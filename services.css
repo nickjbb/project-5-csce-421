@@ -1,0 +1,111 @@
+/* Consistent with content pages*/
+:root{
+    --background: #2D3319;
+    --primary_one: #517664;
+    --primary_two: #9FD8CB;
+    --neutral_one: #D6E5E3;
+    --neutral_two: #CACFD6;
+    --total_black: #000000;
+}
+
+
+@keyframes fade {
+    0% {opacity: 0%; translate: 0 100px;}
+    100% {opacity: 100%; translate: 0 0;}
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 50%;}
+    100% {opacity: 100%;}
+}
+
+
+* {
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: var(--primary_one);
+    display: flex;
+    justify-content: flex-end;
+}
+
+body {
+    background-color: var(--neutral_two);
+}
+
+.title {
+    font-size: 2.5em;
+    color: var(--neutral_two);
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--neutral_two);
+    opacity: 50%;
+}
+
+a:hover {
+    opacity: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.stylebutton {
+    border-radius: 10px;
+    background-color: var(--neutral_two);
+}
+
+/* Specific to this page*/
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+    padding: 10px;
+}
+
+.service_title {
+    font-size: 2.5em;
+    grid-column: 1;
+    grid-row: 1;
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.desc {
+    font-size: 1em;
+    grid-column: 1;
+    grid-row: 2;
+
+    padding: 20px;
+}
+
+.text_box {
+    background-color: white;
+
+    padding: 5px;
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 20px;
+
+    max-width: 1000px;
+    max-height: 1000px;
+}
+
+.images {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+
+    border-radius: 10px;
+}

@@ -1,0 +1,122 @@
+/* Consistent with content pages*/
+:root{
+    --background: #2D3319;
+    --primary_one: #517664;
+    --primary_two: #9FD8CB;
+    --neutral_one: #D6E5E3;
+    --neutral_two: #CACFD6;
+    --total_black: #000000;
+}
+
+
+@keyframes fade {
+    0% {opacity: 0%; translate: 0 100px;}
+    100% {opacity: 100%; translate: 0 0;}
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 50%;}
+    100% {opacity: 100%;}
+}
+
+
+* {
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: var(--primary_one);
+    display: flex;
+    justify-content: flex-end;
+}
+
+body {
+    background-color: var(--neutral_two);
+}
+
+.title {
+    font-size: 2.5em;
+    color: var(--neutral_two);
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--neutral_two);
+    opacity: 50%;
+}
+
+a:hover {
+    opacity: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.stylebutton {
+    border-radius: 10px;
+    background-color: var(--neutral_two);
+}
+
+/* Specific To This Page*/
+
+main {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+}
+
+.image_text {
+    font-size: 1.25em;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    opacity: 50%;
+}
+
+.logo:hover {
+    opacity: 100%;
+}
+
+.resume {
+    max-width: 600px;
+    max-height: 600px;
+    height: auto;
+    width: auto;
+}
+
+.languages {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+
+    color: var(--primary_one);
+    font-style: italic;
+}
+
+.skill {
+    font-style: italic;
+}
+
+.interest_text {
+    margin: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.tech_skills {
+    font-size: 1.5em;
+
+    display: flex;
+}
+
+

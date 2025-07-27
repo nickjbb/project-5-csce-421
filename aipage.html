@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aipage.css" id="page_style">
+    <script src="animations.js"></script>
+    <title>about me</title>
+</head>
+<body>
+    <header>
+        <div class="title">About Me</div>
+
+        <a href="index.html"><li class="home">Home</li></a>
+        <a href="aipage.html"><li class="aboutme">About Me</a></li>
+        <a href="projects.html"><li class="portfolio">Portfolio</a></li>
+        <a href="about_me.html"><li class="qualifications">Qualifications</a></li>
+        <a href="services.html"><li class="service">Service</a></li>
+        <button type="button" onclick="switchStyleAI()" class="stylebutton">Change Style</button>
+    </header>
+    <main>
+        <div class="ai_text">
+            Hello! I’m Nicholas, and I’m thrilled to share a bit about my journey with you.<br><br>
+
+            I hail from the quaint rural town of Perryton, Texas, where my early years were shaped by the wide-open spaces and tight-knit community. My academic journey began with a deep passion for math. I found immense joy in solving complex problems and frequently participated in local math competitions, which were both challenging and exhilarating.<br><br>
+            
+            At 16, I took a leap and started my university education at the University of North Texas through their TAMS program. Initially, I envisioned a future in medicine, inspired by a desire to help others. However, my path took an exciting turn during my biochemistry research, where I stumbled upon my true calling: data analytics. The intricate dance between data and insights captivated me, leading me to pivot towards Computer Science.<br><br>
+            
+            I transferred to Texas A&M University to pursue my newfound passion. Here, I’ve immersed myself in the world of programming and technology, actively participating in numerous hackathons and competitions. These experiences have not only honed my skills but also ignited a relentless drive to innovate and solve real-world problems.<br><br>
+            
+            Outside of academia and programming, I indulge in a variety of hobbies that keep me balanced and inspired. I’m an avid music producer, finding creativity in crafting sounds and rhythms. Cooking is another passion of mine—experimenting with new recipes and flavors is a delightful adventure. And when I need to clear my mind, you’ll find me jogging along trails, enjoying the beauty of nature and staying active.<br><br>
+            
+            Thanks for visiting my page. I look forward to connecting and sharing more about my journey and interests!<br><br>
+        </div>
+
+        <br>
+        <div class="text-box" id="myTextBox">
+            <div class="header" onclick="toggleBox()">Click to Minimize/Expand</div>
+            <div class="content">
+                <p>Can you give me a description for an "About Me" page using the following details:</p>
+                <p>I grew up in a rural town named Perryton, Texas.</p>
+                <p>At school, my favorite subject was math. I would often compete in local math competitions.</p>
+                <p>Later in life, I developed a love for programming through Python.</p>
+                <p>I started university at 16 at the University of North Texas through their TAMS program.</p>
+                <p>I originally wanted to become a doctor, but I discovered my love for data analytics through biochemistry research.</p>
+                <p>I transferred to Texas A&M University, where I decided to pursue Computer Science.</p>
+                <p>Here, I have competed in numerous hackathons and competitions.</p>
+                <p>Some of my hobbies include music production, cooking, and jogging trails.</p>
+                <p>Can you put the previous prompts into a minimizable text box in HTML</p>
+            </div>
+        </div>
+    
+        <script>
+            function toggleBox() {
+                var textBox = document.getElementById('myTextBox');
+                textBox.classList.toggle('minimized');
+            }
+        </script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,106 @@
+:root{
+    --background: #2D3319;
+    --primary_one: #517664;
+    --primary_two: #9FD8CB;
+    --neutral_one: #D6E5E3;
+    --neutral_two: #CACFD6;
+    --total_black: #000000;
+}
+
+
+@keyframes fade {
+    0% {opacity: 0%; translate: 0 100px;}
+    100% {opacity: 100%; translate: 0 0;}
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 50%;}
+    100% {opacity: 100%;}
+}
+
+* {
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--neutral_two);
+}
+
+body{
+
+}
+
+button {
+    border: var(--neutral_one);
+    border-radius: 10px;
+    font-size: 30px;
+    /*background-color: var(--neutral_one);*/
+    color: var(--primary_one);
+    font-style: italic;
+    font-weight: bold;
+    align-items: right;
+}
+
+.full_page{
+    padding: 11%;
+    margin: auto;
+
+    width: auto;
+    height: auto;
+    max-width: 70%;
+    max-height: 70%;
+
+    display: grid;
+    animation: fade ease 1s;
+}
+
+.front-photo {
+    border-radius: 50%;
+
+    width: auto;
+    height: auto;
+    max-width: 450px;
+    max-height: 450px;
+}
+
+.text {
+    grid-column-start: 2;
+
+}
+
+.howdy {
+    font-size: 3em;
+    font-style: italic;
+    color: var(--primary_one);
+    margin: 5%;
+    text-shadow: 1px 1px 1px black;
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style-type: none;
+
+    padding: 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px, 50px;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--primary_one);
+    /*background-color: var(--neutral_one);*/
+    border-radius: 5px;
+}
+
+li {
+    font-size: 2em;
+    border-radius: 10px;
+    
+    font-style: italic;
+    font-weight: bold;
+
+}
